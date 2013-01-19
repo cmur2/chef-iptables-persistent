@@ -1,0 +1,17 @@
+
+*filter
+
+# Let everything in and out
+:INPUT ACCEPT
+:FORWARD DROP
+:OUTPUT ACCEPT
+
+# Or drop all inputs in general but allow localhost
+#-A INPUT  -i lo -j ACCEPT
+#-A OUTPUT -o lo -j ACCEPT
+
+# More tips here: https://www.sixxs.net/wiki/IPv6_Firewalling
+
+COMMIT
+
+# Don't forget the trailing newline
