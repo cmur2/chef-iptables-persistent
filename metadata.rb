@@ -1,3 +1,4 @@
+name             "iptables-persistent"
 maintainer       "Christian Nicolai"
 maintainer_email "cn@mycrobase.de"
 license          "Apache 2.0"
