@@ -1,4 +1,3 @@
-
 package "iptables" do
   action :upgrade
 end
@@ -19,7 +18,7 @@ end
 
 # needs trailing newline at end of file!
 cookbook_file "/etc/iptables/rules" do
-  content "rules"
+  source "rules"
   owner "root"
   group "root"
   mode 0600
@@ -28,7 +27,7 @@ end
 
 # needs trailing newline at end of file!
 cookbook_file "/etc/iptables/rules.v6" do
-  content "rules.v6"
+  source "rules.v6"
   owner "root"
   group "root"
   mode 0600
