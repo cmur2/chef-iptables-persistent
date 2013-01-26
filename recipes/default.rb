@@ -9,7 +9,7 @@ end
 # use custom init script for providing ip6tables support to Debian Squeeze
 cookbook_file "/etc/init.d/iptables-persistent" do
   source "iptables-persistent.init"
-  mode 0755
+  mode 00755
 end
 
 directory "/etc/iptables" do
@@ -21,7 +21,7 @@ cookbook_file "/etc/iptables/rules" do
   source "rules"
   owner "root"
   group "root"
-  mode 0600
+  mode 00600
   notifies :restart, "service[iptables-persistent]"
 end
 
@@ -30,7 +30,7 @@ cookbook_file "/etc/iptables/rules.v6" do
   source "rules.v6"
   owner "root"
   group "root"
-  mode 0600
+  mode 00600
   notifies :restart, "service[iptables-persistent]"
 end
 
