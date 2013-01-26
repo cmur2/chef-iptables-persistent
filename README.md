@@ -12,7 +12,7 @@ Add the iptables-persistent::default target to the runlist and overwrite the *ru
 
 ### Platform
 
-It should works on all OSes that provide a iptables-persistent package which currently are Debian and all derivates like Mint, Ubuntu, etc.
+It should work on all OSes that provide a iptables-persistent package which currently are Debian and all derivates like Mint, Ubuntu, etc.
 
 ## Recipes
 
