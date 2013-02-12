@@ -6,7 +6,7 @@ An ip(6)tables rules loading cookbook relying on the iptables-persistent package
 
 ## Usage
 
-Add the iptables-persistent::default target to the runlist and overwrite the *rules* and *rules.v6* in the cookbook's files directory (or via an overlay site-cookbooks directory that leaves the original files untouched). 
+Add `recipe[iptables-persistent::default]` to the `run_list` and overwrite the *rules* and *rules.v6* files in the cookbook's files directory (or replace them via an overlay site-cookbooks directory that leaves the original files untouched). 
 
 ## Requirements
 
