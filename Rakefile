@@ -1,3 +1,5 @@
+
+# try to use foodcritic
 begin
   require 'foodcritic'
 
@@ -7,4 +9,5 @@ begin
 
   task :default => [ :foodcritic ]
 rescue LoadError
+  task :default => []
 end
