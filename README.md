@@ -1,5 +1,7 @@
 # chef-iptables-persistent
 
+[![Build Status](https://travis-ci.org/cmur2/chef-iptables-persistent.png)](https://travis-ci.org/cmur2/chef-iptables-persistent)
+
 ## Description
 
 An ip(6)tables rules loading cookbook relying on the iptables-persistent package functionality that restores the IPv4 and IPv6 iptables rules from two files stored in */etc/iptables/* on startup.
