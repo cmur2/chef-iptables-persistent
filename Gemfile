@@ -1,3 +1,3 @@
-source :rubygems
+source 'https://rubygems.org'
 
-gem 'test-kitchen'
+gem 'foodcritic', :platform => :ruby_19
