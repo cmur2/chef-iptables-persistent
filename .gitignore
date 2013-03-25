@@ -1,4 +1,1 @@
-.bundle
-.cache
-.kitchen
-bin
+.lock
