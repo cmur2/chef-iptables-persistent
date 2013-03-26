@@ -18,6 +18,7 @@ cookbook_file "/etc/iptables/rules" do
   owner "root"
   group "root"
   mode 00600
+  cookbook node['iptables-persistent']['file_cookbook'] if node['iptables-persistent']['file_cookbook']
   notifies :restart, "service[iptables-persistent]"
 end
 
@@ -27,6 +28,7 @@ cookbook_file "/etc/iptables/rules.v6" do
   owner "root"
   group "root"
   mode 00600
+  cookbook node['iptables-persistent']['file_cookbook'] if node['iptables-persistent']['file_cookbook']
   notifies :restart, "service[iptables-persistent]"
 end
 

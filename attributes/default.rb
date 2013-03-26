@@ -1,0 +1,1 @@
+default['iptables-persistent'] = {}
