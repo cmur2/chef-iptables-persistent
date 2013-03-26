@@ -1,10 +1,6 @@
-package "iptables" do
-  action :upgrade
-end
 
-package "iptables-persistent" do
-  action :upgrade
-end
+package "iptables"
+package "iptables-persistent"
 
 # use custom init script for providing ip6tables support to Debian Squeeze
 cookbook_file "/etc/init.d/iptables-persistent" do
