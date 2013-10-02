@@ -14,7 +14,7 @@ end
 
 # needs trailing newline at end of file!
 cookbook_file "/etc/iptables/rules" do
-  source "rules"
+  source node['iptables-persistent']['rules-name']
   owner "root"
   group "root"
   mode 00600
@@ -24,7 +24,7 @@ end
 
 # needs trailing newline at end of file!
 cookbook_file "/etc/iptables/rules.v6" do
-  source "rules.v6"
+  source node['iptables-persistent']['rules.v6-name']
   owner "root"
   group "root"
   mode 00600

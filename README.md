@@ -8,7 +8,7 @@ An ip(6)tables rules loading cookbook relying on the iptables-persistent package
 
 ## Usage
 
-Add `recipe[iptables-persistent::default]` to the `run_list` and overwrite the *rules* and *rules.v6* files in the cookbook's files directory (or replace them via an overlay site-cookbooks directory that leaves the original files untouched) or use the `node['iptables-persistent']['file_cookbook']` option to specify the name of the cookbook where the files will be loaded from instead of the current cookbook. 
+Add `recipe[iptables-persistent::default]` to the `run_list` and overwrite the *rules* and *rules.v6* files in the cookbook's files directory (or replace them via an overlay site-cookbooks directory that leaves the original files untouched) or use the `node['iptables-persistent']['file_cookbook']` option to specify the name of the cookbook where the files will be loaded from instead of the current cookbook. Via `node['iptables-persistent']['rules-name']` and `node['iptables-persistent']['rules.v6-name']` you can change the required rules file name within the cookbook to something else to allow multiple rules sets in one file cookbook.
 
 ## Requirements
 
